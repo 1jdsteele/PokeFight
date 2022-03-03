@@ -23,6 +23,9 @@ function App() {
             setNextPoke(data); // this is all the data for the poke
             console.log(data);
             console.log(data.name);
+            console.log(data.stats);
+            console.log(Object.values(data.stats[0])[0])
+            console.log(Object.values(data.stats[4])[0])
             setUserInput('');  
           })
           .catch(console.log.error);
