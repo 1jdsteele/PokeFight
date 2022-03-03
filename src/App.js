@@ -22,6 +22,7 @@ function App() {
           .then((data) => {
             setNextPoke(data); // this is all the data for the poke
             console.log(data);
+            console.log(data.name);
             setUserInput('');  
           })
           .catch(console.log.error);
@@ -53,7 +54,9 @@ function App() {
         handleSubmit={handleSubmit}
         userInput={userInput}
       />
-      <Team1 />
+      <Team1 
+       nextPoke={nextPoke} 
+      />
     </div>
   );
 }
