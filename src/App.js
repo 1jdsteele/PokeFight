@@ -4,6 +4,7 @@ import Team1 from './components/team1/team1';
 import SubmissionForm from './components/submissionform/submissionform';
 import React, {useEffect, useState} from 'react';
 import RightSide from './components/RightSide/RightSide'
+import Compare from './components/Compare/Compare';
 
 export default function App() {
 
@@ -60,6 +61,7 @@ export default function App() {
        nextPoke={nextPoke} 
       />
       <RightSide />
+      <Compare />
     </div>
   );
 }
