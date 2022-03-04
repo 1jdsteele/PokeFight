@@ -1,5 +1,6 @@
 
-
+//YOU NEED TO CHECK IF THE CONNECTION TO THE CSS FILE WORKS
+import "./RightSide.css"
 import Team2 from './team2/team2';
 import SubmissionForm2 from './SubmissionForm2/SubmissionForm2';
 

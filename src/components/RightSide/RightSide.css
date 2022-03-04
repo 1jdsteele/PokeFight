@@ -1,0 +1,11 @@
+* {
+    color: rgb(19, 19, 19);
+}
+
+/* CAN I IMPORT FONT FAMILIES WITH AN INDEX.HTML FILE? */
+
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(178, 101, 255), cornflowerblue);
+}
