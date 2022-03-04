@@ -1,11 +1,12 @@
 
-import './App.css';
-import Team1 from './components/team1/team1';
-import SubmissionForm from './components/submissionform/submissionform';
-import React, {useEffect, useState} from 'react';
-import RightSide from './components/RightSide/RightSide'
 
-export default function App() {
+import Team2 from './team2/team2';
+import SubmissionForm2 from './SubmissionForm2/SubmissionForm2';
+
+
+import React, {useEffect, useState} from 'react';
+
+export default function RightSide() {
 
   const [userInput, setUserInput] = useState(1);  //this is the state that goes from user input into the API request
     
@@ -49,17 +50,18 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className='rigthSide'>
       <h2>app has loaded properly</h2>
-      <SubmissionForm 
+      <SubmissionForm2 
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         userInput={userInput}
       />
-      <Team1 
+      <Team2 
        nextPoke={nextPoke} 
       />
-      <RightSide />
+      
+      
     </div>
   );
 }
