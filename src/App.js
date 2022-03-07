@@ -7,12 +7,13 @@ import RightSide from './components/RightSide/RightSide'
 
 import {Compare} from "./components/Compare"
 import RandomPoke from './components/RandomPoke/RandomPoke';
-
+import SubmissionForm2 from './components/RightSide/SubmissionForm2/SubmissionForm2';
+import Team2 from './components/RightSide/team2/team2';
 
 export default function App() {
 
 
-  // ======== THIS SECTION IS FOR USER INPUT ===============
+  // ======== THIS SECTION IS FOR USER 1 INPUT ===============
 
   const [userInput, setUserInput] = useState(1);  //this is the state that goes from user input into the API request
     
@@ -57,7 +58,7 @@ export default function App() {
 
   }
   
-  //================ THIS SECTION IS FOR RANDOM ENEMY SELECTION
+  //================ THIS SECTION IS FOR RANDOM ENEMY SELECTION ==========
 
   const [randomInput, setRandomInput] = useState(1);
   
@@ -95,6 +96,53 @@ export default function App() {
 
   }
 
+
+  // =========== THIS SECTION IS FOR PLAYER 2 SELECTION =========
+
+  const [user2Input, setUser2Input] = useState(2);  //this is the state that goes from user input into the API request
+    
+  const[ user2Poke, setUser2Poke] = useState(); //this is the state that holds data from api request and sends it to Team1
+
+  
+
+  function user2RequestData(userInput) {
+
+      const url = `https://pokeapi.co/api/v2/pokemon/${user2Input}`;
+
+     
+      fetch(url)
+          .then((res) => res.json())
+          .then((data) => {
+            setUser2Poke(data); // this is all the data for the poke
+            // console.log(data);
+            // console.log(data.name);
+            // console.log(data.stats);
+            // console.log(Object.values(data.stats[0])[0])
+            // console.log(Object.values(data.stats[4])[0])
+            setUser2Input('');  
+          })
+          .catch(console.log.error);
+  }  
+
+  useEffect(() => {
+    userRequestData(user2Input);
+  }, []); 
+
+  function handleChangeUser2(event) {
+    event.preventDefault(); // THIS LINE MIGHT NOT BE NECESSARY KEEP FOR NOW BUT AT END CHECK
+    setUser2Input(event.target.value);
+
+  }
+
+  function handleSubmitUser2(event) {
+    event.preventDefault();
+    //THIS UPCOMING LINE MIGHT BE NECESSARY BUT I DON'T THINK SO
+    //requestData();
+    user2RequestData(userInput);
+
+  }
+
+
   return (
     <div className="wrapper">
       <h2>Pokemon Battle Game</h2>
@@ -108,8 +156,19 @@ export default function App() {
         nextPoke={nextPoke} 
         />
       </div>
+      <div className="rightSide">
+        <SubmissionForm2 
+          handleChangeUser2={handleChangeUser2}
+          handleSubmitUser2={handleSubmitUser2}
+          user2Input={user2Input}
+
+        />
+        <Team2 
+          user2Poke={user2Poke}
+        />
+      </div>
      
-      <RightSide />
+      {/* <RightSide /> */}
       <RandomPoke 
         onClick={generateRandomPoke}
       />
