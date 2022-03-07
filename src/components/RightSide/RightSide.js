@@ -22,11 +22,11 @@ export default function RightSide() {
           .then((res) => res.json())
           .then((data) => {
             setNextPoke(data); // this is all the data for the poke
-            console.log(data);
-            console.log(data.name);
-            console.log(data.stats);
-            console.log(Object.values(data.stats[0])[0])
-            console.log(Object.values(data.stats[4])[0])
+            // console.log(data);
+            // console.log(data.name);
+            // console.log(data.stats);
+            // console.log(Object.values(data.stats[0])[0])
+            // console.log(Object.values(data.stats[4])[0])
             setUserInput('');  
           })
           .catch(console.log.error);
@@ -51,7 +51,7 @@ export default function RightSide() {
   }
 
   return (
-    <div className='rigthSide'>
+    <div className='rightSide'>
       <h2>app has loaded properly</h2>
       <SubmissionForm2 
         handleChange={handleChange}

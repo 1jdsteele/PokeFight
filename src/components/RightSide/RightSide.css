@@ -1,11 +1,29 @@
-* {
+/* * {
     color: rgb(19, 19, 19);
-}
+} */
+
+
+
 
 /* CAN I IMPORT FONT FAMILIES WITH AN INDEX.HTML FILE? */
 
 
-body {
+
+
+
+/* body {
     min-height: 100vh;
     background-image: linear-gradient(rgb(178, 101, 255), cornflowerblue);
+   
 }
+
+.rightSide {
+    color:blueviolet;
+    position: absolute;
+    right: 0;
+  } */
+
+
+
+
+/* YO FIGURE OUT WHY THIS ABOVE ISN'T MOVING ANYTHING */

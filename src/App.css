@@ -1,4 +1,59 @@
-.rightSide {
-  position: absolute;
-  right: 0;
+* {
+  color: rgb(19, 19, 19);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+/* CAN I IMPORT FONT FAMILIES WITH AN INDEX.HTML FILE? */
+
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(178, 101, 255), cornflowerblue);
+ 
+}
+
+.rightSide {
+  color: white;
+}
+
+
+.rightSide {
+  color: white;
+  grid-row: 2 / span 2;
+  grid-column: 3;
+  background-color:burlywood;
+
+}
+
+.leftSide {
+  grid-row: 2 / span 2;
+  grid-column: 1;
+}
+
+
+.wrapper {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 3fr 3fr 3fr;
+ 
+
+
+}
+
+
+
+img {
+  height: 300px;
+}
+
+
+/* things i need help with
+1. using datacontext to move stat totals from team 1 and team 2 to compare
+2. how the image source works for inputting team2 line 38 maybe it just doesn't like the - in the key name
+3. why will the right side not change its text color to white
+4. how to not immediately load the pokemon upon start: useeffect second parameter */
+
