@@ -73,8 +73,8 @@ export default function App() {
         .then((res) => res.json())
         .then((data) => {
           setEnemyPoke(data); // this is all the data for the poke
-          console.log(data);
-          console.log(data.name);
+          // console.log(data);
+          // console.log(data.name);
           // console.log(data.stats);
           // console.log(Object.values(data.stats[0])[0])
           // console.log(Object.values(data.stats[4])[0])
@@ -91,7 +91,7 @@ export default function App() {
   function generateRandomPoke(){
     let randNum = Math.ceil(Math.random()*898)
     setRandomInput(randNum); // PRETTY SURE I DON'T NEED THIS LINE ANYMORE
-    console.log(randNum);
+    // console.log(randNum);
     randomRequestData(randNum);
 
   }

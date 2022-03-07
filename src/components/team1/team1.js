@@ -26,7 +26,7 @@ export default function Team1({nextPoke}) {
 
 
             {/* BELOW IS THE MOST IMPORTANT INFO BUT WILL PROBABLY GRAB THIS FROM APP */}
-            <p>Total Stats: {team1StatTotal}</p>
+            {/* <p>Total Stats: {team1StatTotal}</p> */}
         </div>
     )
 }

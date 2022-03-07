@@ -33,7 +33,7 @@ export default function Team2({user2Poke}) {
 
     return(
         <div className="team2">
-            <h2>team2 has loaded correctly</h2>
+            
             <h2>{user2Poke.name}</h2>
             <img src={Object.values(user2Poke.sprites.other)[2].front_default} alt="" />
             {/* <p>HP: {user2Poke.stats[0].base_stat}</p>

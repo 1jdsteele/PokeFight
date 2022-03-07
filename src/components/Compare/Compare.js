@@ -4,10 +4,10 @@
 
 export function Compare({nextPoke, user2Poke}) {
     if (!nextPoke) {
-        return <h2>No Pokemon Selected</h2>
+        return <h2>Select two Pokemon to battle!</h2>
     }
     if (!user2Poke) {
-        return <h2>No Pokemon selected from Compare line 10</h2>
+        return <h2>Select two Pokemon to battle!</h2>
     }
 
     let nextPokeStatTotal = Object.values(nextPoke.stats[0])[0] + Object.values(nextPoke.stats[1])[0] + Object.values(nextPoke.stats[2])[0] + Object.values(nextPoke.stats[3])[0] + Object.values(nextPoke.stats[4])[0] + Object.values(nextPoke.stats[5])[0];
@@ -16,13 +16,13 @@ export function Compare({nextPoke, user2Poke}) {
 
     return (
         <div className="compare">
-            <h2>compare has loaded properly</h2>
+            {/* <h2>compare has loaded properly</h2>
             <p>User pokemon base stat total: {nextPokeStatTotal}</p>
-            <p>User 2 pokemon base stat total: {user2PokeStatTotal}</p>
+            <p>User 2 pokemon base stat total: {user2PokeStatTotal}</p> */}
             {nextPokeStatTotal > user2PokeStatTotal ? (
-                <p>Player 1 has won!!!</p>
+                <h2>Player 1 has won the battle!!!</h2>
             ) : (
-                <p>Player 2 has won!!!</p>
+                <h2>Player 2 has won the battle!!!</h2>
             )}
         
         </div>
