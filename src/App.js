@@ -90,7 +90,7 @@ export default function App() {
 
   function generateRandomPoke(){
     let randNum = Math.ceil(Math.random()*898)
-    setRandomInput(randNum);
+    setRandomInput(randNum); // PRETTY SURE I DON'T NEED THIS LINE ANYMORE
     console.log(randNum);
     randomRequestData(randNum);
 
@@ -169,9 +169,12 @@ export default function App() {
       </div>
      
       {/* <RightSide /> */}
-      <RandomPoke 
-        generateRandomPoke={generateRandomPoke}
-      />
+      <div className="random">
+        <RandomPoke 
+          generateRandomPoke={generateRandomPoke}
+          enemyPoke={enemyPoke}
+        />
+      </div>
      {/* <button onClick={generateRandomPoke}>This is the test button</button> */}
      <div className="compare">
       <Compare 
