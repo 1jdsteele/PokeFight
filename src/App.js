@@ -170,13 +170,15 @@ export default function App() {
      
       {/* <RightSide /> */}
       <RandomPoke 
-        onClick={generateRandomPoke}
+        generateRandomPoke={generateRandomPoke}
       />
-     <button onClick={generateRandomPoke}>This is the test button</button>
-     <Compare 
-      nextPoke={nextPoke} 
-      user2Poke={user2Poke}
-     />
+     {/* <button onClick={generateRandomPoke}>This is the test button</button> */}
+     <div className="compare">
+      <Compare 
+        nextPoke={nextPoke} 
+        user2Poke={user2Poke}
+      />
+    </div>
     </div>
   );
 }
