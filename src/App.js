@@ -175,6 +175,7 @@ export default function App() {
      <button onClick={generateRandomPoke}>This is the test button</button>
      <Compare 
       nextPoke={nextPoke} 
+      user2Poke={user2Poke}
      />
     </div>
   );
