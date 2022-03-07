@@ -145,7 +145,7 @@ export default function App() {
 
   return (
     <div className="wrapper">
-      <h2>Pokemon Battle Game</h2>
+      <h1 className="header">Pokemon Battle Game</h1>
       <div className="leftSide">
         <SubmissionForm 
           handleChange={handleChange}
