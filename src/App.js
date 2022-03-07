@@ -40,9 +40,9 @@ export default function App() {
           .catch(console.log.error);
   }  
 
-  useEffect(() => {
-    userRequestData(userInput);
-  }, []); 
+  // useEffect(() => {
+  //   userRequestData(userInput);
+  // }, []); 
 
   function handleChange(event) {
     event.preventDefault(); // THIS LINE MIGHT NOT BE NECESSARY KEEP FOR NOW BUT AT END CHECK
@@ -92,7 +92,7 @@ export default function App() {
     let randNum = Math.ceil(Math.random()*898)
     setRandomInput(randNum);
     console.log(randNum);
-    randomRequestData(randomInput);
+    randomRequestData(randNum);
 
   }
 
@@ -124,9 +124,9 @@ export default function App() {
           .catch(console.log.error);
   }  
 
-  useEffect(() => {
-    userRequestData(user2Input);
-  }, []); 
+  // useEffect(() => {
+  //   user2RequestData(user2Input);
+  // }, []); 
 
   function handleChangeUser2(event) {
     event.preventDefault(); // THIS LINE MIGHT NOT BE NECESSARY KEEP FOR NOW BUT AT END CHECK

@@ -19,7 +19,12 @@ export function Compare({nextPoke, user2Poke}) {
             <h2>compare has loaded properly</h2>
             <p>User pokemon base stat total: {nextPokeStatTotal}</p>
             <p>User 2 pokemon base stat total: {user2PokeStatTotal}</p>
-            
+            {nextPokeStatTotal > user2PokeStatTotal ? (
+                <p>Player 1 has won!!!</p>
+            ) : (
+                <p>Player 2 has won!!!</p>
+            )}
+        
         </div>
     )
 }
