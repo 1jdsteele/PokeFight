@@ -1,7 +1,7 @@
 import './App.css';
 import Team1 from './components/team1/team1';
 import SubmissionForm from './components/submissionform/submissionform';
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {Compare} from "./components/Compare"
 import RandomPoke from './components/RandomPoke/RandomPoke';
 import SubmissionForm2 from './components/RightSide/SubmissionForm2/SubmissionForm2';
