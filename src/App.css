@@ -65,6 +65,7 @@ body {
   grid-row: 1;
   grid-column: 1 / span 3;
   font-size: 96px;
+  margin-top: 40px;
 }
 
 
@@ -73,9 +74,13 @@ img {
 }
 
 
-/* things i need help with
-1. using datacontext to move stat totals from team 1 and team 2 to compare
-2. how the image source works for inputting team2 line 38 maybe it just doesn't like the - in the key name
-3. why will the right side not change its text color to white
-4. how to not immediately load the pokemon upon start: useeffect second parameter */
+/* Things I can do now that the game is pretty much there:
+1. The readme and all the other little things!
+3. throw an error to the user if they input something that won't bring a pokemon
+4. clean out random console logs
+5. clean out random comments
+6. give shout out to DT in readme
+7. add spacing in the player sections
 
+
+*/

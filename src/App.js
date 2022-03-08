@@ -46,7 +46,7 @@ export default function App() {
 
   function handleChange(event) {
     event.preventDefault(); // THIS LINE MIGHT NOT BE NECESSARY KEEP FOR NOW BUT AT END CHECK
-    setUserInput(event.target.value);
+    setUserInput(event.target.value.toLowerCase());
 
   }
 
@@ -130,7 +130,7 @@ export default function App() {
 
   function handleChangeUser2(event) {
     event.preventDefault(); // THIS LINE MIGHT NOT BE NECESSARY KEEP FOR NOW BUT AT END CHECK
-    setUser2Input(event.target.value);
+    setUser2Input(event.target.value.toLowerCase());
 
   }
 
@@ -147,6 +147,7 @@ export default function App() {
     <div className="wrapper">
       <h1 className="header">Pokemon Battle Game</h1>
       <div className="leftSide">
+        <h2>Player 1</h2>
         <SubmissionForm 
           handleChange={handleChange}
           handleSubmit={handleSubmit}
@@ -157,6 +158,7 @@ export default function App() {
         />
       </div>
       <div className="rightSide">
+        <h2>Player 2</h2>
         <SubmissionForm2 
           handleChangeUser2={handleChangeUser2}
           handleSubmitUser2={handleSubmitUser2}
