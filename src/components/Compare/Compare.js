@@ -1,6 +1,3 @@
-// import React, { useContext } from "react"
-// import { DataContext } from "../../DataContext"
-
 
 export function Compare({nextPoke, user2Poke}) {
     if (!nextPoke) {
@@ -16,9 +13,7 @@ export function Compare({nextPoke, user2Poke}) {
 
     return (
         <div className="compare">
-            {/* <h2>compare has loaded properly</h2>
-            <p>User pokemon base stat total: {nextPokeStatTotal}</p>
-            <p>User 2 pokemon base stat total: {user2PokeStatTotal}</p> */}
+          
             {nextPokeStatTotal > user2PokeStatTotal ? (
                 <h2>Player 1 has won the battle!!!</h2>
             ) : (
@@ -28,8 +23,3 @@ export function Compare({nextPoke, user2Poke}) {
         </div>
     )
 }
-
-
-// export function baseStatTotal(nextPoke) {
-//     return Object.values(nextPoke.stats[0])[0] + Object.values(nextPoke.stats[1])[0] + Object.values(nextPoke.stats[2])[0] + Object.values(nextPoke.stats[3])[0] + Object.values(nextPoke.stats[4])[0] + Object.values(nextPoke.stats[5])[0];
-// }
