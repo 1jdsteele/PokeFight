@@ -73,10 +73,24 @@ img {
   height: 300px;
 }
 
+.flash {
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+}
+@keyframes blink {
+  from {
+     opacity: 1;
+  }
+  to {
+     opacity: 0;
+  }
+}
 
 /* Things I can do now that the game is pretty much there:
-1. The readme in GH flavor with: description, tech used, instructions on the technical side of the app, and contribution guidleines!!!!!!!!!!!!!!
-3. throw error to user if they input something that won't bring pokemon !!!!!!!!!!!!!!
+1. The readme in GH flavor with:  instructions on the technical side of the app, and contribution guidleines!!!!!!!!!!!!!!
+
 6. give shout out to DT in readme
 7. add spacing in the player sections
 8. Can I import fonts with out an index.html file?

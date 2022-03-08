@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Pokemon Battle Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This main goal of this project was to call an API using React. I took the liberty of ambiguity to recreate in an extremely pared down fashion the most financially successful video game franchise of all time: Pokemon. The foundation of the game in it's current form is simple. A user can input a Pokemon name or ID number to choose a Pokemon. A second user does the same, and a winner is announced. Both users are also given an opportunity for a suggestion of Pokemon.
 
-In the project directory, you can run:
+## Tech Used
 
-### `npm start`
+Javascript
+React
+Pokemon API
+CSS
+Visual Studio Code
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Link to deployed app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://pedantic-hopper-eb0e09.netlify.app
 
-### `npm test`
+## Link to GitHub repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://github.com/1jdsteele/pokefight
 
-### `npm run build`
+## Installation Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Fork and clone the repo via either SSH or HTTPS key.
+2. In terminal type: git clone [key]
+3. In terminal move into the file, type: cd pokefight
+4. Since this was built with React be sure to install it. In terminal type: npm install
+5. Once installed open in VS code by typing into terminal: code .
+6. The "." on step 5 was important.
+7. To open the file on your browser locally make sure that your last internet browser was not running in incognito mode as that disallows certain features.
+8. To open the program on your browser locally type into the terminal: npm start
+9. The most important components are within the src folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contribution Guidelines
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Pokemon Battle App is an open source project open to all suggestions of how to improve end user experience and the ease of engineering maintenance. Please don't hesitate to report a bug, submit new features or fixes, or to propose new features or methods for rendering already existing features.
 
-### `npm run eject`
+Reporting bugs:
+Create an issue in GitHub and describe the bug, how to produce the bug, and any ideas on how to fix it.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Add code:
+Submit a pull request on GitHub.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Sources
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Most work done by Jake Steele.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Esin Saribudak helped to get the random feature working.
 
-## Learn More
+Danny Thompson was the architect of  /src/components/Compare/index.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Animation on .flash in App.css courtesy of LOTUSMS of stack overflow.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Zoe Peterson helped to get the errors to end user.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
