@@ -116,18 +116,20 @@ img {
   .compare {
     grid-row: 3;
     grid-column: 1;
-    background-color: cornflowerblue;
+    background-image: linear-gradient(burlywood, cornflowerblue);
   }
 
   .random {
     grid-row: 4;
     grid-column: 1;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
+    background-image: linear-gradient(cornflowerblue, burlywood);
   }
 
   .rightSide {
     grid-row: 5;
     grid-column: 1;
+    background-image: linear-gradient(burlywood, transparent);
   }
 
   img {
