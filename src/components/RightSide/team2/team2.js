@@ -3,6 +3,8 @@
 export default function Team2({user2Poke}) {
     if (!user2Poke) {
         return <h2>No Pokemon Selected</h2>
+    } else if (user2Poke === "mistake") {
+        return <h2>Sorry, that's not a valid entry</h2>
     }
 
 

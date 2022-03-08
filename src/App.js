@@ -29,7 +29,7 @@ export default function App() {
             setNextPoke(data); // this is all the data for the player 1 Poke
             setUserInput('');  
           })
-          .catch(console.log.error);
+          .catch(setNextPoke("mistake"));
   }  
 
  
@@ -95,7 +95,7 @@ export default function App() {
             setUser2Poke(data); // this is all the data for the poke for player 2
             setUser2Input('');  
           })
-          .catch(console.log.error);
+          .catch(setUser2Poke("mistake"));
   }  
 
  
