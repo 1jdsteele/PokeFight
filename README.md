@@ -4,6 +4,12 @@
 
 This main goal of this project was to call an API using React. I took the liberty of ambiguity to recreate in an extremely pared down fashion the most financially successful video game franchise of all time: Pokemon. The foundation of the game in it's current form is simple. A user can input a Pokemon name or ID number to choose a Pokemon. A second user does the same, and a winner is announced. Both users are also given an opportunity for a suggestion of Pokemon.
 
+## Screenshots
+
+![desktop](https://media.git.generalassemb.ly/user/41473/files/f8c0f900-9edd-11ec-8d18-3914081dd079)
+
+![mobile](https://media.git.generalassemb.ly/user/41473/files/56eddc00-9ede-11ec-8ecb-e5a9222fcbdc)
+
 ## Tech Used
 
 Javascript
@@ -62,6 +68,12 @@ I want to be able to pick a pokemon because I want to choose.
 I want to have a suggesiton for a pokemon because I don't know them all.
 I want to know who won the battle.
 
+## Future Goals
+
+Allow players to pick multiple pokemon on their team.
+Turn random suggestion feature into an opponent.
+
+
 ## Sources
 
 Most work done by Jake Steele.
@@ -74,6 +86,10 @@ Animation on .flash in App.css courtesy of LOTUSMS of stack overflow.
 
 Zoe Peterson helped to get the errors to end user.
 
+
+## Original wireframe and component tree
+
+![wireframe](https://media.git.generalassemb.ly/user/41473/files/d334ef00-9edf-11ec-9dff-1ea34bf93c93)
 
 
 
