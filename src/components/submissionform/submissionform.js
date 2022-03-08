@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 
 
-export default function SubmissionForm({handleSubmit, handleChange, searchString }) {
+export default function SubmissionForm({handleSubmit, handleChange}) {
 
   
 

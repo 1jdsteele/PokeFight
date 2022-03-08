@@ -101,7 +101,6 @@ export default function App() {
  
 
   function handleChangeUser2(event) {
-    //event.preventDefault(); // THIS LINE MIGHT NOT BE NECESSARY KEEP FOR NOW BUT AT END CHECK
     setUser2Input(event.target.value.toLowerCase());
 
   }
