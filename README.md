@@ -12,9 +12,13 @@ Pokemon API
 CSS
 Visual Studio Code
 
+## Link to API
+
+https://pokeapi.co/api/v2/pokemon/[REPLACE THIS WITH ID NUMBER OR POKEMON NAME]
+
 ## Link to deployed app
 
-https://pedantic-hopper-eb0e09.netlify.app
+https://pokemonbattleapp.netlify.app/
 
 ## Link to GitHub repository
 
@@ -42,6 +46,22 @@ Create an issue in GitHub and describe the bug, how to produce the bug, and any 
 Add code:
 Submit a pull request on GitHub.
 
+## MVP Goals
+
+Use 4 React components and have all DOM manipulation via React.
+Call and use a third-party API.
+Be deplyed to the web.
+Use CSS Grid for layout.
+20+ commits.
+Version control via GitHub.
+Well documented README in GH flavor markdown.
+
+## User Stories
+
+I want to be able to pick a pokemon because I want to choose.
+I want to have a suggesiton for a pokemon because I don't know them all.
+I want to know who won the battle.
+
 ## Sources
 
 Most work done by Jake Steele.
@@ -53,5 +73,7 @@ Danny Thompson was the architect of  /src/components/Compare/index.js
 Animation on .flash in App.css courtesy of LOTUSMS of stack overflow.
 
 Zoe Peterson helped to get the errors to end user.
+
+
 
 
